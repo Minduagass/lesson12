@@ -1,0 +1,296 @@
+:root {
+  --main-color: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  min-height: 500px;
+  min-width: 500px;
+}
+
+main {
+  background-image: url(https://images.squarespace-cdn.com/content/v1/624b3c6de8311d5139f663a3/1649097845101-CLE34J9KWWSKAFRAWTHS/pickle-perfection-v1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/*-------------------------- header --------------------------------------------*/
+
+header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-top: 4rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  align-items: center;
+}
+
+.burger-btn {
+  all: unset;
+  display: none;
+}
+
+.burger-btn img {
+  height: 30px;
+  width: 30px;
+}
+
+header nav ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: var(--main-color);
+}
+
+header h1 {
+  display: flex;
+  color: var(--main-color);
+  justify-content: center;
+}
+
+.cart-btn {
+  all: unset;
+  display: flex;
+  justify-content: right;
+  cursor: pointer;
+}
+
+.cart-btn img {
+  all: unset;
+  height: 30px;
+  width: 30px;
+}
+
+/*---------------------------- main title ----------------------------------------*/
+
+.main-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.main-title h1 {
+  font-size: 5rem;
+  color: var(--main-color);
+  padding-bottom: 2rem;
+}
+
+.main-btn {
+  padding: 1.5rem 8rem;
+  background-color: var(--main-color);
+  color: rgb(232, 143, 108);
+  font-weight: 500;
+  font-size: 1.1rem;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.main-btn:hover {
+  opacity: 0.8;
+}
+
+/*----------------------------- section-1 --------------------------------------*/
+
+.section-1-title {
+  text-align: center;
+  padding-top: 5rem;
+}
+
+.section-1-title h2 {
+  font-size: 2rem;
+  padding-bottom: 3rem;
+}
+
+.section-1-title p {
+  font-size: 1.2rem;
+  padding-bottom: 5rem;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(250px, 400px));
+  justify-content: center;
+  gap: 2rem;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  padding-bottom: 5rem;
+}
+
+.products a {
+  text-decoration: none;
+  color: black;
+}
+
+.product-1,
+.product-2,
+.product-3 {
+  height: 415px;
+  width: 100%;
+  max-width: 300px;
+  /* background-color: aqua; */
+  text-align: center;
+}
+
+.products img {
+  height: 300px;
+  width: 100%;
+  max-width: 300px;
+  object-fit: cover;
+  padding-bottom: 2rem;
+}
+
+/*----------------------------- section-1 cards buttons --------------------------*/
+.qty {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding-top: 1.5rem;
+}
+
+.qty button {
+  all: unset;
+  width: 30px;
+  height: 50px;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.qty button:hover {
+  opacity: 0.8;
+}
+
+.qty input {
+  all: unset;
+  width: 50px;
+  height: 50px;
+}
+
+.qty .add {
+  width: 200px;
+  height: 50px;
+  border: none;
+  background: rgb(223, 124, 109);
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+  color: var(--main-color);
+}
+
+/*----------------------------- section-2 ----------------------------------------*/
+
+.section-2 {
+  background-image: url(https://images.squarespace-cdn.com/content/v1/624b3c6de8311d5139f663a3/1649097845105-3FQCWXUH11567IYXZRG5/pink-image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+/*-------------------------------- section-3 ---------------------------------------  */
+
+.section-3 {
+  text-align: center;
+}
+
+.section-3 h1 {
+  font-size: 3rem;
+  padding-bottom: 3rem;
+  padding-top: 5rem;
+}
+
+.section-3 p {
+  font-size: 1.2rem;
+  padding-bottom: 5rem;
+}
+
+.btn {
+  padding: 1.5rem 3rem;
+  background-color: rgb(223, 124, 109);
+  color: var(--main-color);
+  font-weight: 500;
+  font-size: 1.1rem;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(200px, 280px));
+  justify-content: center;
+  gap: 2rem;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  padding-top: 10rem;
+  padding-bottom: 5rem;
+}
+
+.cards img {
+  height: 280px;
+  width: 100%;
+  max-width: 280px;
+  text-align: center;
+}
+
+/*---------------------------- footer ------------------------------------------*/
+
+footer {
+  background-color: rgb(223, 124, 109);
+  padding-left: 4vw;
+  height: 300px;
+  padding-top: 4rem;
+  color: var(--main-color);
+}
+
+footer a {
+  color: var(--main-color);
+}
+
+footer h2 {
+  padding-bottom: 2rem;
+}
+
+/*---------------------------- responsive -----------------------------------------*/
+
+@media (max-width: 1320px) {
+  .cards {
+    grid-template-columns: repeat(2, minmax(200px, 280px));
+    justify-content: center;
+    justify-items: center;
+  }
+}
+
+@media (max-width: 830px) {
+  header nav ul {
+    display: none;
+  }
+
+  .burger-btn {
+    display: inline-block;
+  }
+  .products {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    justify-items: center;
+  }
+}
