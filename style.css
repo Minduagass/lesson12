@@ -135,13 +135,10 @@ header h1 {
   color: black;
 }
 
-.product-1,
-.product-2,
-.product-3 {
+.product {
   height: 415px;
   width: 100%;
   max-width: 300px;
-  /* background-color: aqua; */
   text-align: center;
 }
 
