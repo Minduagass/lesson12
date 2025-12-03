@@ -9,8 +9,7 @@
 }
 
 .wrapper {
-  min-height: 500px;
-  min-width: 500px;
+  max-height: 100vh;
 }
 
 main {
